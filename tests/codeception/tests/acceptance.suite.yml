@@ -25,6 +25,6 @@ modules:
                 'os_version': 'sierra'
                 'browserstack.debug': 'true'
                 'build': '%TRAVIS_BUILD_NUMBER%'
-                'project': 'rtMedia-core-test'
+                'project': 'rtMedia-core-test-bunty'
                 'browserstack.local': 'true'
 
