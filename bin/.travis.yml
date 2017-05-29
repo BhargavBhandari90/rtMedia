@@ -14,7 +14,9 @@ addons:
   browserstack:
     username: rtcamp3
     access_key:
-     secure: VFBgrctr5uDgE4PIea7QoXJDdQqq5TjPhvEcEBBcymbsP7cYUniD8K/0At+hArw5fqKajNlPZZjbxEhBRVv4hXNin++S6qwLeHCQMyHWQTt5vOULL16R2GsO30QUkFT/Egw2rh9v6qBei7Ol2mwz7i+XzZQE8cSDa/TJl7wMVwU=
+     #secure: VFBgrctr5uDgE4PIea7QoXJDdQqq5TjPhvEcEBBcymbsP7cYUniD8K/0At+hArw5fqKajNlPZZjbxEhBRVv4hXNin++S6qwLeHCQMyHWQTt5vOULL16R2GsO30QUkFT/Egw2rh9v6qBei7Ol2mwz7i+XzZQE8cSDa/TJl7wMVwU=
+
+     secure: FrhViixkGs/TN2sH5EPMiwHfcLtmGZxpx460eyoyb23SpN8VvhbWWfJCU6PNFpysHyWJvn6wfP602Rp8qReeLiYs3G3SX2548dMKXwxkaw0wp738mUN/pmI70yKO0j18xuPDyMH1twS7kReR4tnNlkJ9LM1ccIYCQyMGyGhIVgtDl13f2l3Njbz9FgtzfRtllMZyWXluNLlnVBqBgfvOhJvVwP6X7sAXPZmJqGYCgKsPbDLFI2VMrHnkucHak13g2BALPEhmECiP7FG5VZWIb67jHFt1b/3y80ZdneH6jgIVij5ERPorofXUICYGHonxawE2h5MylVCoAMqC4Gnbm6v+ZWEkdkIKKqShjrD0Ay8mICGRv9t6UId/UymA7P7JKER3n/+oUPYdGB0zr6eFsOVke1NrDiYiFoNCz8gkybz0dflC7j+KguubLXTILGcLNsiqiBSAMp9vmLzggBqt/h2ftwkxUuY5o5/GY51sKQj2yvJdVBuFLYfFsLCgB4gqnAy6y5U575sVZ2pvM4DCSI8DgRmIPWSQl79lFC9uGcy7F+rmiPcD0f7WGZdIf1nPGcIdaliaWjkvpN1kTqlKZK0SoR+kebtg47FwUJY/LOQKVCNNdkSZmyhhiNgs3/ABwsgIZ9VuIxlPpnf90/K4w61vMSN+2/V4zqPVYEbSzTU=
 
 
 before_install:
@@ -32,7 +34,7 @@ before_script:
 - wget -qO ee rt.cx/ee && sudo bash ee
 - sudo apt-get update
 - sudo tail /var/log/ee/ee.log
-- sudo ee site create automation.rtmedia.me --wp --user=ADMINUSER --email=sumeet.sarna@rtcamp.com --pass=ADMINPASS
+- sudo ee site create automation.rtmedia.me --wp --user=ADMINUSER --email=bhargav.bhandari@rtcamp.com --pass=ADMINPASS
 - sudo sed -i '/^127.0.0.1/ s/$/ automation.rtmedia.me/' /etc/hosts
 - sudo chmod 777 -R /var/www
 - cd /var/www/automation.rtmedia.me/htdocs/wp-content/plugins/ && mkdir rtMedia
@@ -53,7 +55,7 @@ before_script:
 - nohup ./BrowserStackLocal --key $BROWSERSTACK_ACCESS_KEY &
 - cd $PLUGIN_DIR/tests/codeception/
 - composer update
-- export PATH="$PATH:/home/travis/build/rtMediaWP/rtMedia/tests/codeception/vendor/bin"
+- export PATH="$PATH:/home/travis/build/BhargavBhandari90/rtMedia/tests/codeception/vendor/bin"
 
 
 script:
