@@ -197,6 +197,16 @@ function rtmedia_init_action_dropdown( parent ) {
 
 jQuery( 'document' ).ready( function( $ ) {
 
+	jQuery( ' .rtmedia-uploader-div' ).css({
+		'opacity': '1',
+		'display': 'block',
+		'visibility': 'visible'
+	});
+
+	jQuery( ' #whats-new-options ' ).css({
+		'opacity': '1',
+	});
+
 	// Tabs
 	if ( typeof $.fn.rtTab !== 'undefined' ) {
 		$( '.rtm-tabs' ).rtTab();
@@ -934,20 +944,10 @@ window.onload = function() {
 		rtm_masonry_reload( rtm_masonry_container );
 	}
 
-	rtm_search_media_text_validation();
-	jQuery( '.rtmedia-uploader-div' ).css({
-		'opacity': '1',
-	    'display': 'block',
-	    'visibility': 'visible'
-	});
-
-	jQuery( ' #whats-new-options ' ).css({
-	    'opacity': '1',
-	});
-
 	if ( check_condition( 'search' ) ) {
 		jQuery( '#media_search_remove' ).show();
 	}
+
 };
 
 /**

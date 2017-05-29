@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rtMedia for WordPress, BuddyPress and bbPress 4.3.2\n"
 "Report-Msgid-Bugs-To: http://community.rtcamp.com/c/rtmedia/\n"
-"POT-Creation-Date: 2017-05-29 18:31:10+00:00\n"
+"POT-Creation-Date: 2017-05-29 19:09:46+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -401,8 +401,8 @@ msgstr ""
 
 #: app/admin/RTMediaAdmin.php:1584 app/admin/RTMediaAdmin.php:1602
 #: app/admin/RTMediaAdmin.php:1620 app/admin/RTMediaFormHandler.php:474
-#: app/admin/RTMediaFormHandler.php:485 app/helper/RTMediaSupport.php:416
-#: app/helper/RTMediaSupport.php:694
+#: app/admin/RTMediaFormHandler.php:485 app/helper/RTMediaSupport.php:417
+#: app/helper/RTMediaSupport.php:695
 msgid "here"
 msgstr ""
 
@@ -1404,16 +1404,16 @@ msgstr ""
 msgid "other friends liked your"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:43 app/helper/RTMediaSupport.php:577
+#: app/helper/RTMediaSupport.php:43 app/helper/RTMediaSupport.php:578
 msgid "Cheatin' uh?"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:44 app/helper/RTMediaSupport.php:578
+#: app/helper/RTMediaSupport.php:44 app/helper/RTMediaSupport.php:579
 msgid "Can not verify request source."
 msgstr ""
 
 #: app/helper/RTMediaSupport.php:74 app/helper/RTMediaSupport.php:75
-#: app/helper/RTMediaSupport.php:351
+#: app/helper/RTMediaSupport.php:352
 msgid "Debug Info"
 msgstr ""
 
@@ -1442,137 +1442,137 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:225
+#: app/helper/RTMediaSupport.php:226
 msgid "by"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:225
+#: app/helper/RTMediaSupport.php:226
 msgid "version"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:371
+#: app/helper/RTMediaSupport.php:372
 msgid "Download Debug Info"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:410
+#: app/helper/RTMediaSupport.php:411
 msgid "There is no media found to migrate."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:416
+#: app/helper/RTMediaSupport.php:417
 #: app/main/controllers/media/RTMediaLoginPopup.php:56
 msgid "Click"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:416
+#: app/helper/RTMediaSupport.php:417
 msgid "here to migrate media from rtMedia 2.x to rtMedia 3.0+."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:444
+#: app/helper/RTMediaSupport.php:445
 msgid "Submit a Bug Report"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:447
+#: app/helper/RTMediaSupport.php:448
 msgid "Submit a New Feature Request"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:450
+#: app/helper/RTMediaSupport.php:451
 msgid "Submit Support Request"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:459
+#: app/helper/RTMediaSupport.php:460
 msgid ""
 "If your site has some issues due to rtMedia and you want support, feel free "
 "to create a support topic on %s"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:460
+#: app/helper/RTMediaSupport.php:461
 msgid "Community Forum"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:466
+#: app/helper/RTMediaSupport.php:467
 msgid ""
 "If you have any suggestions, enhancements or bug reports, then you can open "
 "a new issue on %s"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:467
+#: app/helper/RTMediaSupport.php:468
 msgid "GitHub"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:486
+#: app/helper/RTMediaSupport.php:487
 msgid "Name"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:491
+#: app/helper/RTMediaSupport.php:492
 msgid "Use actual user name which used during purchased."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:498
+#: app/helper/RTMediaSupport.php:499
 msgid "Email"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:503
+#: app/helper/RTMediaSupport.php:504
 msgid "Use email id which used during purchased"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:510
+#: app/helper/RTMediaSupport.php:511
 msgid "Website"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:518
+#: app/helper/RTMediaSupport.php:519
 msgid "Subject"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:526 templates/media/album-single-edit.php:20
+#: app/helper/RTMediaSupport.php:527 templates/media/album-single-edit.php:20
 #: templates/media/media-single-edit.php:17
 msgid "Details"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:542
+#: app/helper/RTMediaSupport.php:543
 msgid "Attachement"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:547
+#: app/helper/RTMediaSupport.php:548
 msgid "Allowed file types are : images, documents and texts."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:593
+#: app/helper/RTMediaSupport.php:594
 msgid "rtMedia Premium Support Request from"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:596
+#: app/helper/RTMediaSupport.php:597
 msgid "rtMedia New Feature Request from"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:599
+#: app/helper/RTMediaSupport.php:600
 msgid "rtMedia Bug Report from"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:602
+#: app/helper/RTMediaSupport.php:603
 msgid "rtMedia Contact from"
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:681
+#: app/helper/RTMediaSupport.php:682
 msgid "Thank you for your Feedback/Suggestion."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:683
+#: app/helper/RTMediaSupport.php:684
 msgid "Thank you for posting your support request."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:684
+#: app/helper/RTMediaSupport.php:685
 msgid "We will get back to you shortly."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:689
+#: app/helper/RTMediaSupport.php:690
 msgid "Your server failed to send an email."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:690
+#: app/helper/RTMediaSupport.php:691
 msgid "Kindly contact your server support to fix this."
 msgstr ""
 
-#: app/helper/RTMediaSupport.php:693
+#: app/helper/RTMediaSupport.php:694
 msgid "You can alternatively create a support request %s"
 msgstr ""
 
@@ -2552,19 +2552,19 @@ msgstr ""
 msgid "media updated"
 msgstr ""
 
-#: app/main/controllers/api/RTMediaJsonApi.php:1051
+#: app/main/controllers/api/RTMediaJsonApi.php:1050
 msgid "media list"
 msgstr ""
 
-#: app/main/controllers/api/RTMediaJsonApi.php:1054
+#: app/main/controllers/api/RTMediaJsonApi.php:1053
 msgid "no media found for requested media type"
 msgstr ""
 
-#: app/main/controllers/api/RTMediaJsonApi.php:1057
+#: app/main/controllers/api/RTMediaJsonApi.php:1056
 msgid "media_type not allowed"
 msgstr ""
 
-#: app/main/controllers/api/RTMediaJsonApi.php:1159
+#: app/main/controllers/api/RTMediaJsonApi.php:1158
 msgid "single media"
 msgstr ""
 
