@@ -936,8 +936,7 @@ jQuery( document ).ready( function( $ ) {
 			$.each( rfiles, function( i, file ) {
 
 				//Set file title along with file
-				rtm_file_name_array = file.name.split( '.' );
-				file.title = rtm_file_name_array[0];
+				file.title = file.name.substring(0,file.name.lastIndexOf("."));
 
 				var hook_respo = rtMediaHook.call( 'rtmedia_js_file_added', [ upl, file, '#rtmedia_uploader_filelist' ] );
 
@@ -1172,7 +1171,7 @@ jQuery( document ).ready( function( $ ) {
 
 			up.settings.multipart_params.context = object;
 			up.settings.multipart_params.context_id = item_id;
-			up.settings.multipart_params.title = files.title.split( '.' )[ 0 ];
+			up.settings.multipart_params.title = files.title;
 
 			if ( typeof files.description != 'undefined' ) {
 				up.settings.multipart_params.description = files.description;
@@ -2367,7 +2366,6 @@ function renderUploadercomment_media( widget_id, parent_id_type ) {
 			up.settings.multipart_params.rtmedia_update = true;
 			up.settings.multipart_params.activity_id = 'null';
 			up.settings.multipart_params.title = files.title.split( '.' )[ 0 ];
-
 			if ( typeof files.description != 'undefined' ) {
 				up.settings.multipart_params.description = files.description;
 			} else {
