@@ -1009,7 +1009,7 @@ class RTMedia {
 		wp_localize_script( 'rtmedia-magnific', 'rtmedia_load_more', esc_html__( 'Loading media', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_empty_activity_msg', esc_html__( 'Please enter some content to post.', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_empty_comment_msg', esc_html__( 'Empty Comment is not allowed.', 'buddypress-media' ) );
-		wp_localize_script( 'rtmedia-main', 'rtmedia_media_delete_confirmation', esc_html__( 'Are you sure you want to delete this media?', 'buddypress-media' ) );
+		wp_localize_script( 'rtmedia-main', 'rtmedia_media_delete_confirmation', apply_filters( 'rtmedia_delete_media_alert_message', esc_html__( 'Are you sure you want to delete this media?', 'buddypress-media' ) ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_media_comment_delete_confirmation', esc_html__( 'Are you sure you want to delete this comment?', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_album_delete_confirmation', esc_html__( 'Are you sure you want to delete this Album?', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_drop_media_msg', esc_html__( 'Drop files here', 'buddypress-media' ) );
@@ -1021,7 +1021,7 @@ class RTMedia {
 		wp_localize_script( 'rtmedia-main', 'rtmedia_select_all_visible', esc_html__( 'Select All Visible', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_unselect_all_visible', esc_html__( 'Unselect All Visible', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_no_media_selected', esc_html__( 'Please select some media.', 'buddypress-media' ) );
-		wp_localize_script( 'rtmedia-main', 'rtmedia_selected_media_delete_confirmation', esc_html__( 'Are you sure you want to delete the selected media?', 'buddypress-media' ) );
+		wp_localize_script( 'rtmedia-main', 'rtmedia_selected_media_delete_confirmation', 'rtmedia_delete_media_mesage', esc_html__( 'Are you sure you want to delete the selected media?', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_selected_media_move_confirmation', esc_html__( 'Are you sure you want to move the selected media?', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_waiting_msg', esc_html__( 'Waiting', 'buddypress-media' ) );
 		wp_localize_script( 'rtmedia-main', 'rtmedia_uploaded_msg', esc_html__( 'Uploaded', 'buddypress-media' ) );

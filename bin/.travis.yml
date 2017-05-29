@@ -57,6 +57,5 @@ before_script:
 - composer update
 - export PATH="$PATH:/home/travis/build/BhargavBhandari90/rtMedia/tests/codeception/vendor/bin"
 
-
 script:
 - wpcept run acceptance --steps
