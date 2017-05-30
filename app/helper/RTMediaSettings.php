@@ -43,29 +43,6 @@ if ( ! class_exists( 'RTMediaSettings' ) ) {
 			$options = $rtmedia->options;
 
 			$defaults = array(
-<<<<<<< HEAD
-				'general_enableAlbums'              => 1,
-				'general_enableAlbums_description'  => 0,
-				'general_enableComments'            => 0,
-				'general_enableLikes'               => 1,
-				'general_downloadButton'            => 0,
-				'general_enableLightbox'            => 1,
-				'general_perPageMedia'              => 10,
-				'general_display_media'             => 'load_more',
-				'general_enableMediaEndPoint'       => 0,
-				'general_showAdminMenu'             => 0,
-				'general_videothumbs'               => 2,
-				'general_jpeg_image_quality'        => 90,
-				'general_uniqueviewcount'           => 0,
-				'general_viewcount'                 => 0,
-				'general_AllowUserData'             => 1,
-				'rtmedia_add_linkback'              => 0,
-				'rtmedia_affiliate_id'              => '',
-				'rtmedia_enable_api'                => 0,
-				'general_masonry_layout'            => 0,
-				'general_masonry_layout_activity'   => 0,
-				'general_direct_upload'             => 0,
-=======
 				'general_enableAlbums'             => 1,
 				'general_enableGallerysearch'      => 0,
 				'general_enableAlbums_description' => 0,
@@ -87,7 +64,7 @@ if ( ! class_exists( 'RTMediaSettings' ) ) {
 				'rtmedia_enable_api'               => 0,
 				'general_masonry_layout'           => 0,
 				'general_direct_upload'            => 0,
->>>>>>> b42a0bde01d6699227c000ece650a5f6d126fb67
+
 			);
 
 			foreach ( $rtmedia->allowed_types as $type ) {
