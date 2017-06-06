@@ -4,6 +4,8 @@
 
 ![banner-772x250](https://cloud.githubusercontent.com/assets/8191145/26444356/bb47f150-4159-11e7-997e-b960bca0293d.jpg)
 
+~Current Version:4.4~
+
 # rtMedia for WordPress, BuddyPress and bbPress #
 
 

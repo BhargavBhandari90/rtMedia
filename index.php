@@ -121,14 +121,37 @@ $rtmedia = new RTMedia();
 function is_rtmedia_vip_plugin() {
 	return ( defined( 'WPCOM_IS_VIP_ENV' ) && WPCOM_IS_VIP_ENV );
 }
-/*
- * Look Ma! Very few includes! Next File: /app/main/RTMedia.php
- */
 
 /**
- * rtmedia_plugin_deactivate Do stuff on plugin deactivation
+ * Do stuff on plugin deactivation.
  */
 function rtmedia_plugin_deactivate() {
 	update_option( 'is_permalink_reset', 'no' );
 }
 register_deactivation_hook( __FILE__, 'rtmedia_plugin_deactivate' );
+
+include_once('updater.php');
+
+add_action( 'admin_init', 'test_latest_update' );
+function test_latest_update() {
+	if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
+		$config = array(
+			'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
+			'proper_folder_name' => 'rtMedia', // this is the name of the folder your plugin lives in
+			'api_url' => 'https://api.github.com/repos/BhargavBhandari90/rtMedia', // the GitHub API url of your GitHub repo
+			'raw_url' => 'https://raw.github.com/BhargavBhandari90/rtMedia/develop-update-test', // the GitHub raw url of your GitHub repo
+			'github_url' => 'https://github.com/BhargavBhandari90/rtMedia', // the GitHub url of your GitHub repo
+			'zip_url' => 'https://github.com/BhargavBhandari90/rtMedia/zipball/develop-update-test', // the zip url of the GitHub repo
+			'sslverify' => true, // whether WP should check the validity of the SSL cert when getting an update, see https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/2 and https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/issues/4 for details
+			'requires' => '3.0', // which version of WordPress does your plugin require?
+			'tested' => '3.3', // which version of WordPress is your plugin tested up to?
+			'readme' => 'README.md', // which file to use as the readme for the version number
+			'access_token' => '', // Access private repositories by authorizing under Appearance > GitHub Updates when this example plugin is installed
+		);
+		new WP_GitHub_Updater($config);
+	}
+}
+
+/*
+ * Look Ma! Very few includes! Next File: /app/main/RTMedia.php
+ */
