@@ -133,4 +133,8 @@ function rtmedia_plugin_deactivate() {
 }
 register_deactivation_hook( __FILE__, 'rtmedia_plugin_deactivate' );
 
+
+echo 'dddddd';
+
 echo 'test';
+
