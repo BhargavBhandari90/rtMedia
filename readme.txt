@@ -163,7 +163,7 @@ http://www.youtube.com/watch?v=dJrykKQGDcs
  * Broken thumbnails in sidebar widget gallery and sorting gallery shortcode
 
 
-= 4.4.1 [June 29, 2017] =
+= 4.4.2 [June 29, 2017] =
 
 * ENHANCEMENTS
 
